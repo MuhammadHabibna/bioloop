@@ -2663,3 +2663,91 @@ body.mode-desktop-active .onboarding-card {
     max-width: 380px;
   }
 }
+
+/* Dedicated Mobile First: Edge-to-edge native app experience on mobile devices */
+@media (max-width: 640px) {
+  body {
+    background: var(--bg-app);
+  }
+  
+  .top-nav-bar {
+    padding: 10px 14px;
+  }
+  
+  .brand-group {
+    gap: 8px;
+  }
+  
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
+  
+  .brand-name {
+    font-size: 1rem;
+  }
+  
+  .brand-sub {
+    font-size: 0.62rem;
+  }
+
+  .mode-switch-group {
+    padding: 2px;
+    gap: 2px;
+  }
+
+  .view-pill {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+
+  .view-pill svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .main-stage {
+    padding: 0;
+    gap: 0;
+  }
+
+  .phone-shell {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 58px);
+    height: calc(100dvh - 58px);
+    max-height: none;
+    min-height: auto;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .phone-notch {
+    display: none;
+  }
+
+  .phone-screen {
+    border-radius: 0;
+  }
+
+  .phone-bottom-nav {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+
+  .jury-control-panel {
+    margin: 16px 14px 40px;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+}
